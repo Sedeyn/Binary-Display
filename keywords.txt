@@ -1,0 +1,14 @@
+#######################################
+# Syntax 8 bit led display
+#######################################
+
+#######################################
+# Class (KEYWORD1)
+#######################################
+
+on			KEYWORD1
+off  			KEYWORD1
+BinaryConvert 	KEYWORD1
+BinaryCount 	KEYWORD1
+BinaryAdd 		KEYWORD1
+Blink			KEYWORD1
