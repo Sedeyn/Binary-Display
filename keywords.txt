@@ -6,15 +6,28 @@
 # Class (KEYWORD1)
 #######################################
 
+<<<<<<< HEAD
 LedDisplay	KEYWORD1
+=======
+LedDisplay  KEYWORD1
+>>>>>>> origin/master
 
 #######################################
 # Methods and functions (KEYWORD2)
 #######################################
 
+<<<<<<< HEAD
 on	KEYWORD2
 off	KEYWORD2
 binaryConvert	KEYWORD2
 binaryCount	KEYWORD2
 binaryAdd	KEYWORD2
 blink		KEYWORD2
+=======
+on  KEYWORD2
+off KEYWORD2
+binaryConvert KEYWORD2
+binaryCount KEYWORD2
+binaryAdd KEYWORD2
+blink KEYWORD2
+>>>>>>> origin/master
