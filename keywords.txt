@@ -6,15 +6,15 @@
 # Class (KEYWORD1)
 #######################################
 
-LedDisplay      KEYWORD1
+LedDisplay  KEYWORD1
 
 #######################################
 # Methods and functions (KEYWORD2)
 #######################################
 
-on			        KEYWORD2
-off  			      KEYWORD2
-binaryConvert 	KEYWORD2
-binaryCount 	  KEYWORD2
-binaryAdd 		  KEYWORD2
-blink			      KEYWORD2
+on  KEYWORD2
+off KEYWORD2
+binaryConvert KEYWORD2
+binaryCount KEYWORD2
+binaryAdd KEYWORD2
+blink KEYWORD2
