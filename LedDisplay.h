@@ -1,5 +1,5 @@
-#ifndef LEDDISPLAY_H
-#define LEDDISPLAY_H
+#ifndef LedDisplay_H
+#define leddisplay_H
 
 #include <Arduino.h>
 
