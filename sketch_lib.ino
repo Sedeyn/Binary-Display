@@ -21,7 +21,7 @@ void loop()
 
   
   lampje.binairCount(); // 0 -> 256
-  //lampje.binairConvert(128); // Converteert input naar binair
-  //lampje.binairAdd(1, 2); // Sommatie
+  //lampje.binairConvert(128); // Convert input to binary
+  //lampje.binairAdd(1, 2); // Add first input with second input and convert and show sum to binary
 } //end loop
 
