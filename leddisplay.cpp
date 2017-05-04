@@ -1,8 +1,8 @@
-#include "leddisplay.h" //include the declaration for this class
+#include "LedDisplay.h" //include the declaration for this class
 
 //<<constructor>>
 
-Leds::Leds(byte pin1, byte pin2, byte pin3, byte pin4, byte pin5, byte pin6, byte pin7, byte pin8) {
+LedDisplay::LedDisplay(byte pin1, byte pin2, byte pin3, byte pin4, byte pin5, byte pin6, byte pin7, byte pin8) {
 
   ledPins[0] = pin1;
   ledPins[1] = pin2;
@@ -23,33 +23,33 @@ Leds::Leds(byte pin1, byte pin2, byte pin3, byte pin4, byte pin5, byte pin6, byt
 }
 
 //<<destructor>>
-Leds::~Leds() {
+LedDisplay::~LedDisplay() {
 
   /*nothing to destruct*/
 }
 
 //setup the LED as output
-void Leds::set(int ledpin) {
+void LedDisplay::set(int ledpin) {
 
   pinMode (ledpin, OUTPUT); //set the pin HIGH and thus turn LED on
 }
 
 //turn the LED on
-void Leds::on(int ledpin) {
+void LedDisplay::on(int ledpin) {
 
   this->set(ledpin);
   digitalWrite(ledpin, HIGH); //set the pin HIGH and thus turn LED on
 }
 
 //turn the LED off
-void Leds::off(int ledpin) {
+void LedDisplay::off(int ledpin) {
 
   this->set(ledpin);
   digitalWrite(ledpin, LOW); //set the pin LOW and thus turn LED off
 }
 
 //blink the LED in a period equal to paramterer -time.
-void Leds::Blink(int ledpin, int tijd) {
+void LedDisplay::blink(int ledpin, int tijd) {
 
   this->set(ledpin);
   on(ledpin);                   //turn LED on
@@ -59,7 +59,7 @@ void Leds::Blink(int ledpin, int tijd) {
 }
 
 // convert decimal number to binary
-void Leds::BinaryConvert(int waarde) {
+void LedDisplay::binaryConvert(int waarde) {
 
   for (int i = 0; i != (sizeof(ledPins) / sizeof(byte)); i++) {
 
@@ -72,25 +72,25 @@ void Leds::BinaryConvert(int waarde) {
 }
 
 // count from 0 to 256 in binary on the screen
-void Leds::BinaryCount() {
+void LedDisplay::binaryCount() {
 
   int num = 0;
   while (num < 257) {
 
-    BinaryConvert(num);
+    binaryConvert(num);
     delay(150);
     num ++;
   }
 }
 
 // count 2 decimal numbers to binary and show each one
-void Leds::BinaryAdd(int waarde1, int waarde2) {
+void LedDisplay::binaryAdd(int waarde1, int waarde2) {
 
-  BinaryConvert(waarde1);
+  binaryConvert(waarde1);
   delay(1000);
-  BinaryConvert(waarde2);
+  binaryConvert(waarde2);
   delay(1000);
-  BinaryConvert(waarde1 + waarde2);
+  binaryConvert(waarde1 + waarde2);
   delay(1500);
 }
 

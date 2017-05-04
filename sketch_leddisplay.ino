@@ -4,10 +4,10 @@
 // 8 Leds as a binary display
 //
 
-#include "leddisplay.h"
+#include "LedDisplay.h"
 
 //Leds light(10, 11, 12, 13); //4bit lsb -> msb
-leddisplay light(6, 7, 8, 9,10, 11, 12, 13); //8bit lsb -> msb
+LedDisplay light(6, 7, 8, 9,10, 11, 12, 13); //8bit lsb -> msb
 
 void setup()
 {
@@ -20,19 +20,19 @@ void setup()
 
 void loop()
 {
-  light.Blink(7, 1000); //call the code that makes the LED blink with 1000ms
-  //light.Blink(7, 500);
-  //light.Blink(7, 250);
-  //light.Blink(7); //time 100 if not included
+  light.blink(7, 1000); //call the code that makes the LED blink with 1000ms
+  //light.blink(7, 500);
+  //light.blink(7, 250);
+  //light.blink(7); //time 100 if not included
   //light.on(7);   //led on
   //light.off(7);  //led off
 
   
-  light.BinaryCount(); // 0 -> 256
+  light.binaryCount(); // 0 -> 256
   
-  //light.BinaryConvert(128); // Convert input to binary
+  //light.binaryConvert(128); // Convert input to binary
   
-  //light.BinaryAdd(1, 2); // Add first input with second input and convert and show sum to binary
+  //light.binaryAdd(1, 2); // Add first input with second input and convert and show sum to binary
   
   
 } //end loop
